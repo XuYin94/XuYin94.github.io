@@ -1,0 +1,49 @@
+.pub {
+    padding:0;
+    text-align: left;
+}
+
+.pub-item {
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    border-left: 3px solid skyblue;
+}
+
+.pub-title {
+    font-weight: bold;
+	clear: both;
+}
+
+.pub-journal {
+    font-style: italic;
+	clear: both;
+}
+
+.pub-year {
+    font-size: 1.4em;
+    padding-bottom: -1em;
+}
+
+.pub-misc {
+    clear: both;
+    display: block;
+}
+
+.pub-author {
+	white-space:nowrap;
+}
+
+.pub-author-info-list {
+	display: none;
+}
+
+.pub-star::after {
+    content: '*'
+}
+
+@media not print {
+	[data-theme="dark"] .pub-item {
+		border-left-color: #ff9d24;
+	}
+}

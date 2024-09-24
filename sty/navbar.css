@@ -1,0 +1,105 @@
+#content-navbar {
+	position: fixed;
+	z-index: 10;
+	height: 30px;
+	transition: height .5s;
+	background-color: rgba(1.,1.,1.,0.5);
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	white-space: nowrap;
+	text-align: center;
+	-webkit-backdrop-filter: saturate(140%) blur(10px);
+	backdrop-filter: saturate(140%) blur(10px);
+}
+
+#content-navbar::-webkit-scrollbar {
+  display: none;
+}
+
+#content-navbar ul,
+#content-navbar ul li {
+    display: inline;
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#content-navbar a {
+	overflow:hidden;
+	color: black;
+	transition: line-height .5s;
+	line-height: 30px;
+	margin: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+}
+
+* > .navbar-share-anchor {
+    display: none;
+    float:right;
+    background:none;
+    padding: 5px;
+    color: #999999;
+    font-size: 15px;
+    border: none;
+    outline:none;
+
+}
+
+.navbar-notification {
+    position:fixed;
+    padding: 1em;
+    background-color: FFFFFF;
+     background-color: rgba(1.,1.,1.,0.5);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+	backdrop-filter: saturate(140%) blur(10px);
+    color: black;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.navbar-share-anchor:focus {
+    border: none;
+    outline: none;
+}
+
+.navbar-share-anchor:hover {
+    display: block;
+    color: #777799;
+}
+
+*:hover > .navbar-share-anchor {
+    display: block;
+}
+
+@media only screen and (max-width: 700px) {
+	#content-navbar {
+		height: 60px;
+	}
+	
+	#content-navbar a {
+		line-height: 60px;
+	}
+	
+	header.namecard {
+		padding-top: 80px;
+	}
+}
+
+@media not print {
+    [data-theme="dark"] #content-navbar {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    [data-theme="dark"] .navbar-notification {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+
+    [data-theme="dark"] #content-navbar a {
+        color: white;
+    }
+}
+

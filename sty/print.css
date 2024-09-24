@@ -1,0 +1,192 @@
+
+@media print{
+    @page {
+		size: A4;
+		@bottom-center{
+			content: counter(page);
+		}
+    }
+	@page {
+		margin-top: 20mm;
+		margin-bottom: 20mm;
+		margin-left: 20mm;
+		margin-right: 20mm;
+		padding:0;
+	}
+    .chapter{
+        break-before: right;
+    }
+	@page {
+	  
+	}
+}
+
+h2, h3, h4 {
+	page-break-after: avoid;
+}
+
+p, li {
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	text-align: justify;
+}
+
+body {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+html, body, main, div {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+
+
+nav {
+	position: relative !important;
+	margin-bottom: 2em !important;
+	border-bottom: 1px solid grey !important;
+	white-space: normal !important;
+	display: table !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+section {
+	padding:0;
+}
+
+section h3 {
+	padding-top: 0 !important;
+	margin-top: 30px !important;
+	border-bottom: 1px solid grey;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+nav a {
+	position: relative;
+	float: left;
+	text-decoration: underline !important;
+	white-space: nowrap !important;
+}
+
+.not-on-print {
+	display: none !important;
+}
+
+.only-on-print {
+	display: inherit;
+}
+
+.namecard-wrapper {
+	background: none;
+}
+
+
+header.namecard {
+	padding:0 !important;
+	background: none;
+	color: black;
+	border-style: solid;
+	border-width: 0 0 0 0;
+	text-shadow: none;
+	width:none;
+	max-width: 800px;
+	margin: 0em auto 1em auto;
+	padding: 20px;
+}
+
+header.namecard h1,
+header.namecard h2, 
+header.namecard h3,
+header.namecard h4, 
+header.namecard h5, 
+header.namecard h6 {
+	display:block;
+	text-align: justify;
+}
+
+header.namecard h1 {
+	font-weight: normal;
+	margin-bottom: 7px;
+}
+
+header.namecard p {
+    margin: 0px;
+    text-align: justify;
+}
+
+header.namecard address {
+	margin: 0;
+	margin-top: 4px;
+    text-align: justify;
+	display: block;
+	position: relative;
+	float:right;
+	font-style: normal;
+	background-color: none;
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+    padding: 0;
+    border-radius: 0;
+	overflow: visible;
+}
+
+
+header.namecard a {
+    color: black;
+}
+
+#profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	display: block;
+	float:right;
+}
+
+.pub-item {
+    break-inside: avoid;
+}
+
+
+.button-print {
+	display: none;
+}
+
+.only-print {
+	display: inherit;
+}
+
+.print-dont-break {
+	break-inside: avoid;
+}
+
+#navbar-padding-bottom {
+    display: none;
+}
+
+.pub-item {
+	border-left: none;
+	list-style-type: inherit;
+    margin-bottom: 1em;
+    padding-left: 0em;
+	margin-left: 1em;
+}
+
+span.career-year {
+	font-weight: bold;
+}
+
+
+span.career-affiliation {
+	font-weight: bold;
+}
